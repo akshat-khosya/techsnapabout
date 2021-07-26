@@ -1,0 +1,127 @@
+/* common css */
+:root {
+    --main-100: #FEFFFF;
+    --main-200: #DEF2F1;
+    --main-400: #3AAFA9;
+    --main-600: #2B7A78;
+    --main-900: #17252A;
+    --white: #fff;
+    --black: #000;
+    --dark: #08090a;
+    --gray:#222;
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --gray-400: #CED4DA;
+    --gray-500: #ADB5BD;
+    --gray-600: #6C757D;
+    --gray-700: #495057;
+    --gray-800: #343A40;
+    --gray-900: #212529;
+    --gray-tr-900: #21252960;
+    --blue: #0085ff;
+    --green:#55c57a;
+    --orange:#ff7730;
+    --yellow: #ffbd00;
+    --red: rgb(255, 25, 17);
+  }
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.contactus{
+    margin: 10% 10% ;
+    
+}
+.contactus__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.contactus__primary{
+    font-size: 52px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+    margin-left: 15%;
+}
+.contactus__primary:hover .contactuss__primary-main{
+    color: var(--blue);
+    cursor: default;
+}
+.contactus__con-form{
+    background-color: var(--gray    );
+    border-radius: 10px;
+    padding: 20px 20px;
+    margin-top: 5%;
+}
+.form__group{
+    margin: 2rem 0 2rem 0;
+}
+.form__input{
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    transition: all .3s;
+    max-width: 700px;
+    min-width: 700px;
+    
+}
+.form__input:focus{
+    outline: none;
+    
+    border-bottom: 5px solid var(--blue);
+}
+.form__input:focus:invalid {
+    border-bottom: 5px solid var(--red);
+}
+.form__input::-webkit-input-placeholder{
+    color: #999;
+}
+.form__label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    display: block;
+    transition: all .3s;
+    color: --tcolor;
+}   
+.form__input:placeholder-shown + .form__label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-.5rem);
+}
+.form__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form__button-btn{
+    border: none;
+    margin-top: 15px;
+    padding: 20px 80px;
+    border-radius: 5px;
+    background: var(--yellow);
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    transition: all .2s;
+    text-align: center;
+    width: 100%;
+    cursor:pointer;
+}

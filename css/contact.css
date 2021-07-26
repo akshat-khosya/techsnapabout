@@ -52,7 +52,7 @@ body{
     font-size: 52px;
     font-family: 'Ubuntu', sans-serif;
     cursor: default;
-    margin-left: 15%;
+    
 }
 .contactus__primary:hover .contactuss__primary-main{
     color: var(--blue);

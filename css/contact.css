@@ -266,9 +266,67 @@ transform: translateX(-84px) translateY(84px);
         
         
     }
+    .form__input{
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+        max-width: 500px;
+        min-width: 500px;
+        
+    }
+    .form__button-btn{
+        border: none;
+        margin-top: 15px;
+        padding: 20px 80px;
+        border-radius: 5px;
+        background: var(--yellow);
+        text-decoration: none;
+        color: var(--dark);
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 600;
+        transition: all .2s;
+        text-align: center;
+        width: 70%;
+       
+    }
     
 }
-@media (max-width:600px){
+@media (max-width:700px){
+    .form__input{
+    font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+        max-width: 400px;
+        min-width: 400px;
+        
+    }
+    .form__button-btn{
+        border: none;
+        margin-top: 15px;
+        padding: 20px 80px;
+        border-radius: 5px;
+        background: var(--yellow);
+        text-decoration: none;
+        color: var(--dark);
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 600;
+        transition: all .2s;
+        text-align: center;
+        width: 50%;
+       
+    }
     .contactus__text{
         position: absolute;
         top: 150px;
@@ -277,4 +335,17 @@ transform: translateX(-84px) translateY(84px);
         transition: all .2s ease-in-out;
         font-family: 'Ubuntu', sans-serif;
     }
+}
+@media (max-width:600px){
+    .form__input{
+        width: 80%;
+        max-width: auto;
+        min-width: auto;
+            
+        } 
+        .form__button-btn{
+          
+            width: 80%;
+           
+        }
 }

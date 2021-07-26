@@ -244,6 +244,25 @@ transform: translateX(-84px) translateY(84px);
 }
 
 /* media query */
+@media (max-width:1500px){
+    .contactus__row{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    .form__button-btn{
+       
+        width: 70%;
+       
+    }
+    .form__button{
+        display: flex;
+        flex-direction: row;
+       justify-content: start;
+    }
+}
 @media (max-width:1200px){
     .form__input{
         font-size: 22px;
@@ -254,63 +273,50 @@ transform: translateX(-84px) translateY(84px);
         width: 100%;
         display: block;
         transition: all .3s;
-        max-width: 400px;
-        min-width: 400px;
+        max-width: 100%;
+        min-width: 100%;
         
     }
+    .form__button-btn{
+       
+        width: 90%;
+       
+    }
+    .form__button{
+        display: flex;
+        flex-direction: row;
+       justify-content: start;
+    }
+    
 }
 @media (max-width:900px){
-    .contactus__row{
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
+    
     .form__input{
         font-size: 22px;
         font-family: 'Ubuntu', sans-serif;
         padding: 1rem 2rem;
         border-radius: 10px;
         border-bottom: 3px solid transparent;
-        width: 100%;
+        width: 90%;
         display: block;
         transition: all .3s;
-        max-width: 500px;
-        min-width: 500px;
+        
         
     }
     .form__button-btn{
-        border: none;
-        margin-top: 15px;
-        padding: 20px 80px;
-        border-radius: 5px;
-        background: var(--yellow);
-        text-decoration: none;
-        color: var(--dark);
-        font-size: 18px;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 600;
-        transition: all .2s;
-        text-align: center;
-        width: 70%;
        
+        width: 90%;
+       
+    }
+    .form__button{
+        display: flex;
+        flex-direction: row;
+       justify-content: start;
     }
     
 }
 @media (max-width:700px){
-    .form__input{
-    font-size: 22px;
-        font-family: 'Ubuntu', sans-serif;
-        padding: 1rem 2rem;
-        border-radius: 10px;
-        border-bottom: 3px solid transparent;
-        width: 100%;
-        display: block;
-        transition: all .3s;
-        max-width: 400px;
-        min-width: 400px;
-        
-    }
+    
     .form__button-btn{
         border: none;
         margin-top: 15px;
@@ -325,6 +331,22 @@ transform: translateX(-84px) translateY(84px);
         transition: all .2s;
         text-align: center;
         width: 50%;
+       
+    }
+    .form__button-btn{
+        border: none;
+        margin-top: 15px;
+        padding: 20px 80px;
+        border-radius: 5px;
+        background: var(--yellow);
+        text-decoration: none;
+        color: var(--dark);
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 600;
+        transition: all .2s;
+        text-align: center;
+        width: 90%;
        
     }
     .contactus__text{

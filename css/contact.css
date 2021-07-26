@@ -140,6 +140,7 @@ body{
     left: -200px;
     cursor: default;
     transition: all .2s ease-in-out;
+    font-family: 'Ubuntu', sans-serif;
 }
 .contactus__text-open{
     transform: translateY(-150px);
@@ -240,4 +241,40 @@ transform: translateY(120px);
 .icons.open .icon.youtube
 {
 transform: translateX(-84px) translateY(84px);
+}
+
+/* media query */
+@media (max-width:1200px){
+    .form__input{
+        font-size: 22px;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        display: block;
+        transition: all .3s;
+        max-width: 400px;
+        min-width: 400px;
+        
+    }
+}
+@media (max-width:900px){
+    .contactus__row{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+}
+@media (max-width:600px){
+    .contactus__text{
+        position: absolute;
+        top: 150px;
+        left: -100px;
+        cursor: default;
+        transition: all .2s ease-in-out;
+        font-family: 'Ubuntu', sans-serif;
+    }
 }

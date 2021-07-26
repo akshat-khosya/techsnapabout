@@ -136,9 +136,24 @@ body{
 }
 .contactus__text{
     position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
+    top: 250px;
+    left: -200px;
+    cursor: default;
+    transition: all .2s ease-in-out;
+}
+.contactus__text-open{
+    transform: translateY(-150px);
+    opacity: 0;
+   
+}
+.contactus__text-para{
+    font-size: 25px;
+}
+.contactus__text-para:hover .text__span{
+    color: var(--green);
+}
+.contactus__text-para:hover .text__span-1{
+    color: var(--blue);
 }
 /* social button */
 .contactus__social{
@@ -162,7 +177,7 @@ body{
 .FAB{
     height: 70px;
     width: 70px;
-    background-color: #0085ff;
+    background-color: var(--green);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -190,6 +205,7 @@ body{
     font-size: 26px;
     transition: all 200ms ease-in-out;
 }
+
 .icons.open .FAB {
     transform: rotate(45deg);
 }

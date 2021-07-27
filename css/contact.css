@@ -37,8 +37,8 @@ body{
     color: #fff !important;
 }
 
-.contactus{
-   
+hr{
+    border: 3px solid #FFFF00;
     
 }
 
@@ -137,7 +137,10 @@ textarea{
     cursor:pointer;
 }
 
-
+/* connect with us */
+.contactus__connectgroup{
+    margin: 5% 0 0 0;
+}
 
 /* media query */
 

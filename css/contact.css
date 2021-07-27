@@ -36,14 +36,19 @@ body{
     background-color: #000 !important;
     color: #fff !important;
 }
+
 .contactus{
     margin: 10% 10% 0% 10% ;
     
 }
+
+.contactus__item{
+    width: 100%;
+}
 .contactus__row{
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
     
 }
 
@@ -76,9 +81,11 @@ body{
     width: 100%;
     display: block;
     transition: all .3s;
-    max-width: 700px;
-    min-width: 700px;
     
+    
+}
+textarea{
+    resize: vertical;
 }
 .form__input:focus{
     outline: none;
@@ -244,130 +251,26 @@ transform: translateX(-84px) translateY(84px);
 }
 
 /* media query */
-@media (max-width:1500px){
-    .contactus__row{
-        display: flex;
-        flex-direction: column;
-        
-        
-    }
 
-    .form__button-btn{
-       
-        width: 70%;
-       
-    }
-    .form__button{
-        display: flex;
-        flex-direction: row;
-       justify-content: start;
-    }
-}
 @media (max-width:1200px){
-    .form__input{
-        font-size: 22px;
-        font-family: 'Ubuntu', sans-serif;
-        padding: 1rem 2rem;
-        border-radius: 10px;
-        border-bottom: 3px solid transparent;
-        width: 100%;
-        display: block;
-        transition: all .3s;
-        max-width: 100%;
-        min-width: 100%;
+    .contactus__row{
         
-    }
-    .form__button-btn{
+        flex-direction: column;
        
-        width: 90%;
-       
-    }
-    .form__button{
-        display: flex;
-        flex-direction: row;
-       justify-content: start;
+        
     }
     
 }
-@media (max-width:900px){
-    
-    .form__input{
-        font-size: 22px;
-        font-family: 'Ubuntu', sans-serif;
-        padding: 1rem 2rem;
-        border-radius: 10px;
-        border-bottom: 3px solid transparent;
-        width: 90%;
-        display: block;
-        transition: all .3s;
-        
-        
-    }
-    .form__button-btn{
-       
-        width: 90%;
-       
-    }
-    .form__button{
-        display: flex;
-        flex-direction: row;
-       justify-content: start;
-    }
-    
-}
+
+
 @media (max-width:700px){
     
-    .form__button-btn{
-        border: none;
-        margin-top: 15px;
-        padding: 20px 80px;
-        border-radius: 5px;
-        background: var(--yellow);
-        text-decoration: none;
-        color: var(--dark);
-        font-size: 18px;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 600;
-        transition: all .2s;
-        text-align: center;
-        width: 50%;
-       
-    }
-    .form__button-btn{
-        border: none;
-        margin-top: 15px;
-        padding: 20px 80px;
-        border-radius: 5px;
-        background: var(--yellow);
-        text-decoration: none;
-        color: var(--dark);
-        font-size: 18px;
-        font-family: 'Ubuntu', sans-serif;
-        font-weight: 600;
-        transition: all .2s;
-        text-align: center;
-        width: 90%;
-       
-    }
+    
     .contactus__text{
-        position: absolute;
+        
         top: 150px;
         left: -100px;
-        cursor: default;
-        transition: all .2s ease-in-out;
-        font-family: 'Ubuntu', sans-serif;
+        
     }
 }
-@media (max-width:600px){
-    .form__input{
-        width: 80%;
-        max-width: auto;
-        min-width: auto;
-            
-        } 
-        .form__button-btn{
-          
-            width: 80%;
-           
-        }
-}
+*/

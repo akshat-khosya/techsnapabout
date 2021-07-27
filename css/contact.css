@@ -259,6 +259,16 @@ transform: translateX(-84px) translateY(84px);
        
         
     }
+    .item2{
+       
+        height: 60vh;
+    }
+    .contactus__text{
+        
+        top: 120px;
+        left: -100px;
+        
+    }
     
 }
 
@@ -268,9 +278,19 @@ transform: translateX(-84px) translateY(84px);
     
     .contactus__text{
         
-        top: 150px;
+        top: 100px;
         left: -100px;
         
     }
+    .contactus__primary{
+        font-size: 42px;
+    }
+    .form__input{
+        font-size: 15px;
+    }
 }
-*/
+@media (max-width:600px){
+    .contactus__primary{
+        font-size: 32px;
+    }
+}

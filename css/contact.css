@@ -9,6 +9,8 @@
     --black: #000;
     --dark: #08090a;
     --gray:#222;
+    --gray-49:rgb(26, 26, 36);
+    --gray-50:  rgb(46, 46, 56);
     --gray-100: #F8F9FA;
     --gray-200: #E9ECEF;
     --gray-300: #DEE2E6;
@@ -33,7 +35,7 @@
 }
 
 body{
-    background-color: #000 !important;
+    background-color: var(--gray-50) !important;
     color: #fff !important;
 }
 
@@ -67,8 +69,7 @@ hr{
     cursor: default;
 }
 .contactus__con-form{
-    background-color: var(--gray    );
-    border-radius: 10px;
+    
     padding: 20px 20px 40px 20px;
     margin-top: 5%;
 }
@@ -76,15 +77,17 @@ hr{
     margin: 2rem 0 2rem 0;
 }
 .form__input{
-    font-size: 22px;
+    font-size: 1.6rem;
     font-family: 'Ubuntu', sans-serif;
     padding: 1rem 2rem;
     border-radius: 10px;
     border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
+    background-color: var(--gray-49);
+    color: var(--main-100);
     transition: all .3s;
-    
+    border: 2px solid var(--gray-49);
     
 }
 textarea{
@@ -93,10 +96,10 @@ textarea{
 .form__input:focus{
     outline: none;
     
-    border-bottom: 5px solid var(--blue);
+    border: 2px solid var(--main-100);
 }
 .form__input:focus:invalid {
-    border-bottom: 5px solid var(--red);
+    border: 2px solid var(--red);
 }
 .form__input::-webkit-input-placeholder{
     color: #999;
@@ -125,9 +128,10 @@ textarea{
     margin-top: 15px;
     padding: 20px 80px;
     border-radius: 5px;
-    background: var(--blue);
+    background: transparent;
+    border: 2px solid var(--main-100);
     text-decoration: none;
-    color: var(--dark);
+    color: var(--main-100);
     font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
@@ -136,12 +140,18 @@ textarea{
     width: 100%;
     cursor:pointer;
 }
+.form__button-btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
 
 /* connect with us */
 .contactus__connectgroup{
-    margin: 5% 0 0 0;
+    margin: 5% 0 5% 0;
 }
-
+.contactus__connectgroup-text{
+    margin-top: 3%;
+}
 /* media query */
 
 @media (max-width:1200px){

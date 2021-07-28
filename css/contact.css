@@ -38,7 +38,11 @@ body{
     background-color: var(--gray-50) !important;
     color: #fff !important;
 }
-
+.connect__primary{
+    margin-left: 3%;
+    color: var(--blue);
+    font-weight: 300;
+}
 hr{
     border: 3px solid #FFFF00;
     
@@ -46,8 +50,11 @@ hr{
 
 .contactus__item{
     width: 100%;
-    margin: 5% 5%;
+    margin: 3% 3%;
 
+}
+.item2{
+    width: 80%;
 }
 .contactus__row{
     display: flex;
@@ -59,6 +66,7 @@ hr{
 
 .contactus__primary{
     font-size: 52px;
+    font-weight: 300;
     font-family: 'Ubuntu', sans-serif;
     cursor: default;
     margin-top: 5%;

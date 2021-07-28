@@ -1,0 +1,206 @@
+/* common css */
+:root {
+    --main-100: #FEFFFF;
+    --main-200: #DEF2F1;
+    --main-400: #3AAFA9;
+    --main-600: #2B7A78;
+    --main-900: #17252A;
+    --white: #fff;
+    --black: #000;
+    --dark: #08090a;
+    --gray:#222;
+    --gray-49:rgb(26, 26, 36);
+    --gray-50:  rgb(46, 46, 56);
+    --gray-100: #F8F9FA;
+    --gray-200: #E9ECEF;
+    --gray-300: #DEE2E6;
+    --gray-400: #CED4DA;
+    --gray-500: #ADB5BD;
+    --gray-600: #6C757D;
+    --gray-700: #495057;
+    --gray-800: #343A40;
+    --gray-900: #212529;
+    --gray-tr-900: #21252960;
+    --blue: #0085ff;
+    --green:#55c57a;
+    --orange:#ff7730;
+    --yellow: #ffbd00;
+    --red: rgb(255, 25, 17);
+  }
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--gray-50) !important;
+    color: #fff !important;
+}
+.connect__primary{
+    margin-left: 3%;
+    color: var(--blue);
+    font-weight: 300;
+}
+hr{
+    border: 3px solid #FFFF00;
+    
+}
+
+.contactus__item{
+    width: 100%;
+    margin: 3% 3%;
+
+}
+.item2{
+    width: 80%;
+}
+.contactus__row{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+.contactus__primary{
+    font-size: 52px;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: default;
+    margin-top: 5%;
+    
+}
+.contactus__primary:hover .contactuss__primary-main{
+    color: var(--blue);
+    cursor: default;
+}
+.contactus__con-form{
+    
+    padding: 20px 20px 40px 20px;
+    margin-top: 5%;
+}
+.form__group{
+    margin: 2rem 0 2rem 0;
+}
+.form__input{
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    background-color: var(--gray-49);
+    color: var(--main-100);
+    transition: all .3s;
+    border: 2px solid var(--gray-49);
+    
+}
+textarea{
+    resize: vertical;
+}
+.form__input:focus{
+    outline: none;
+    
+    border: 2px solid var(--main-100);
+}
+.form__input:focus:invalid {
+    border: 2px solid var(--red);
+}
+.form__input::-webkit-input-placeholder{
+    color: #999;
+}
+.form__label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    display: block;
+    transition: all .3s;
+    color: --tcolor;
+}   
+.form__input:placeholder-shown + .form__label{
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-.5rem);
+}
+.form__button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form__button-btn{
+    border: none;
+    margin-top: 15px;
+    padding: 20px 80px;
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid var(--main-100);
+    text-decoration: none;
+    color: var(--main-100);
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    transition: all .2s;
+    text-align: center;
+    width: 100%;
+    cursor:pointer;
+}
+.form__button-btn:hover{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* connect with us */
+.contactus__connectgroup{
+    margin: 5% 0 5% 0;
+}
+.contactus__connectgroup-text{
+    margin-top: 3%;
+}
+/* media query */
+
+@media (max-width:1200px){
+    .contactus__row{
+        
+        flex-direction: column;
+       
+        
+    }
+    .item2{
+       
+        height: 40vh;
+    }
+    .contactus__text{
+        
+        top: 120px;
+        left: -100px;
+        
+    }
+    
+}
+
+
+@media (max-width:700px){
+    
+    
+    .contactus__text{
+        
+        top: 100px;
+        left: -100px;
+        
+    }
+    .contactus__primary{
+        font-size: 42px;
+    }
+    .form__input{
+        font-size: 15px;
+    }
+}
+@media (max-width:600px){
+    .contactus__primary{
+        font-size: 32px;
+    }
+}

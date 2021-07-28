@@ -26,6 +26,7 @@
     --orange:#ff7730;
     --yellow: #ffbd00;
     --red: rgb(255, 25, 17);
+    --middel-purple:#d982b5;
   }
 
 *{ 
@@ -40,7 +41,7 @@ body{
 }
 .connect__primary{
     margin-left: 3%;
-    color: var(--blue);
+    color: var(--middel-purple);
     font-weight: 300;
 }
 hr{
@@ -79,7 +80,7 @@ hr{
 .contactus__con-form{
     
     padding: 20px 20px 40px 20px;
-    margin-top: 5%;
+    margin-top: 0%;
 }
 .form__group{
     margin: 2rem 0 2rem 0;
@@ -157,8 +158,24 @@ textarea{
 .contactus__connectgroup{
     margin: 5% 0 5% 0;
 }
+.contactus__tertiary{
+    font-size: 2.4rem;
+    font-weight: 100;
+}
 .contactus__connectgroup-text{
     margin-top: 3%;
+    font-size: 1.6rem;
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: var(--main-100);
+    font-weight: 900;
+    border-bottom: 2px solid var(--yellow);
+}
+a:hover{
+    color: var(--yellow);
+    border-bottom: 2px solid var(--blue);
 }
 /* media query */
 

@@ -186,28 +186,24 @@ a:hover{
        
         
     }
-    .item2{
-       
-        height: 40vh;
-    }
-    .contactus__text{
-        
-        top: 120px;
-        left: -100px;
-        
+    .contactus__item{
+        width: 90%;
+        margin-left: 5%;
     }
     
+    .connect__primary{
+        margin-left: 5%;
+    }
 }
 
 
 @media (max-width:700px){
     
-    
-    .contactus__text{
-        
-        top: 100px;
-        left: -100px;
-        
+    .contactus__tertiary{
+        font-size: 1.6rem;
+    }
+    .contactus__connectgroup-text{
+        font-size: 0.8rem;
     }
     .contactus__primary{
         font-size: 42px;

@@ -39,6 +39,9 @@ body{
     background-color: var(--gray-50) !important;
     color: #fff !important;
 }
+.contactus{
+    margin-top: 10%;
+}
 .connect__primary{
     margin-left: 3%;
     color: var(--middel-purple);
@@ -83,13 +86,13 @@ hr{
     margin-top: 0%;
 }
 .form__group{
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 1rem 0;
 }
 .form__input{
-    font-size: 1.6rem;
+    font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     padding: 1rem 2rem;
-    border-radius: 10px;
+    
     border-bottom: 3px solid transparent;
     width: 100%;
     display: block;
@@ -105,17 +108,21 @@ textarea{
 .form__input:focus{
     outline: none;
     
-    border: 2px solid var(--main-100);
+    border-top: 1px solid var(--main-100);
+    border-bottom: 1px solid var(--main-100);
 }
 .form__input:focus:invalid {
-    border: 2px solid var(--red);
+    border: 1px solid #fc2a35 !important; 
 }
+
+
+
 .form__input::-webkit-input-placeholder{
     color: #999;
 }
 .form__label{
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 700; 
     margin-left: 1rem;
     margin-top: .5rem;
     display: block;
@@ -159,30 +166,36 @@ textarea{
     margin: 5% 0 5% 0;
 }
 .contactus__tertiary{
-    font-size: 2.4rem;
+    font-size: 24px;
     font-weight: 100;
 }
 .contactus__connectgroup-text{
     margin-top: 3%;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 100;
 }
 .contactus__links{
     text-decoration: none;
     color: var(--main-100);
+    font-size: 16px;
     font-weight: 900;
     border-bottom: 2px solid var(--yellow);
 }
 .contactus__links:hover{
     color: var(--yellow);
     border-bottom: 2px solid var(--blue);
+    font-size: 17px;
 }
 
 /* footer*/
+footer{
+    
+}
 .footer{
    width: 100%;
+   
     background-color: var(--black);
-    border-top-left-radius: 200px;
+    
     margin-left: 5px;
     display: flex;
     flex-direction: row;
@@ -246,6 +259,14 @@ textarea{
     
     .connect__primary{
         margin-left: 5%;
+    }
+    .footer__group{
+        width: 33%;
+        min-width: 33%;
+    }
+    .footer__group:last-child{
+        width: 100%;
+       
     }
 }
 

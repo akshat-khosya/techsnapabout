@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./Learners.css">
@@ -21,28 +22,30 @@
 </head>
 
 <body>
-    <section class="header">
-		<img id='logo' src="./assets/logo.jpg" alt="logo">
-		<div class="navItems">
-			<a href="##">About Us</a>
-			<a href="##">Our People</a>
-			<a href="##">Learn</a>
-			<button class="btn">Get Started</button>
-		</div>
-		<div class="Ham">
-			<img src="./assets/menu.png" alt="Ham">
-		</div>
-	</section>
-    <div class="dropMenu">
-		<ul>
-			<li><a href="##">About Us</a></li>
-			<li><a href="##">Our People</a></li>
-			<li><a href="##">Learn</a></li>
-			<button class="btn">Get Started</button>
+    <section
+    class="header">
+    <img id='logo' src="./assets/logo.jpg" alt="logo">
+    <div class="navItems">
+        <a href="##">About Us</a>
+        <a href="##">Our People</a>
+        <a href="##">Learn</a>
+        <button class="btn">Get Started</button>
+    </div>
+    <div class="Ham">
+        <img src="./assets/menu.png" alt="Ham" >
+    </div>
+</section>
+<!-- mobile menu --------------------------------------------- -->
+<div class="dropMenu">
+<ul>
+<li><a href="##">About Us</a></li>
+<li><a href="##">Our People</a></li>
+<li><a href="##">Learn</a></li>
+<button class="btn">Get Started</button>
 
-		</ul>
-		<div class="Close">X</div>
-	</div>
+</ul>
+<div class="Close">X</div>
+</div>
     <section class="contactus">
         <h1 class="contactus__primary connect__primary">Connect with us</h1>
         <div class="contactus__row">
@@ -188,7 +191,37 @@
     <!--JavaScript link -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="./contact.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Animation------------------------------------
+        AOS.init({
+            duration: 900,
+            offset: 220,
+            easing: 'ease-in-out-quad'
+        });
+      //-----scroll-----------------
+      const ham = document.querySelector('.Ham');
+      const Close=document.querySelector(".Close");
+      const DropMenu =document.querySelector('.dropMenu')
+        window.addEventListener('scroll', () => {
+    const top = window.innerHeight * (10 / 100)+300;
+    if (window.scrollY <= top) {
+        document.querySelector(".Scroll").style.display='none';
+    
+    }
+    if (window.scrollY > top) {
+            document.querySelector(".Scroll").style.display='grid';
+    }
+});
+    ham.addEventListener('click',() => {
+        DropMenu.classList.add("MenuAnimation")
 
+    })
+    Close.addEventListener('click',() => {
+        DropMenu.classList.remove('MenuAnimation')
+
+    })
+    </script>
 </body>
 
 </html>
